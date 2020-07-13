@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 400vh;
+    background-color: rgb(59, 59, 155);
+    font-family: 'Press Start 2P', cursive;
+}
+
+.heading-first {
+    padding: 100px 0 300px 0;
+    align-items: center;
+}
+
+.heading-first h1 {
+    font-size: 50px;;
+}
+
+.battle-text {
+
+    padding: 0 0 50px 0;
+}
+.intro {
+    color: white;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+   
+} 
+
+ 
+
+
+.intro button {
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    background: rgba(194, 34, 29, 0.767)
+} 
+
+
+
+.pokeballs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+.pokeball-img1, .pokeball-img2 {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+
+
+
+
+
+
+
+.heading-second h1 {
+    font-size: 40px;
+    opacity: 0%;
+} 
+
+.heading-second h2 {
+    opacity: 0%;
+}
+
+.pokemon-name-display {
+    color: white;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 10px;
+    opacity: 0%;
+}
+
+
+
+.matchup {
+    color: white;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0%;
+}
+
+
+
+
+.reset {
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    background: rgba(194, 34, 29, 0.767)
+    opacity: 0%;
+}
+
+
+
+
+
+.sprites  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0%;
+}
+
+.height-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0%;
+}   

@@ -5,37 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Pokemon Battle: Rise!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="battle">
-        <div class="pokemon-name">
-            <div class="pokemon1">
-                <h2>Dynamic Pokemon1 Name Displays Here</h2>
-            </div>
-            <div class="pokemon2">
-                <h2>Dynamic Pokemon2 Name Displays Here</h2>
-            </div>
-        </div>
+        
+        <!-- This section is for the text at the top and middle of the first page -->
+     
+        
+
+
+        <!-- This section is for the first "page" -->
         <div class="intro">
-            <h1>Pokemon Battle: Rise!</h1>
-            <p></p>
-            <h4>Choose Battle Mode:</h4>
-            <select name="" id="">
-                <option value="Bigger">Bigger Pokemon Wins</option>
-                <option value="Smaller">Smaller Pokemon Wins</option>
-            </select>
-            <button>GO!!</button>
+            <!-- This section is for the text at the top and middle of the second page -->
+            <div class="heading-first">
+                <h1>Pokemon Battle: Rise!</h1>
+            </div>  
+                
+            <!-- End of that section -->
+            <div class="battle-text">
+                <h4>Choose Battle Mode:</h4>
+            </div>
+                
+                <select>
+                    <option value="Bigger">Bigger Pokemon Wins</option>
+                    <option value="Smaller">Smaller Pokemon Wins</option>
+                </select>
+           
+            
+            <div class="pokeballs">
+                <img class="pokeball-img1" src="./assets/pokeball_one.png" alt="pokeball">
+                <button class="go">GO!!</button>
+                <img class="pokeball-img2" src="./assets/pokeball_two.png" alt="pokeball">
+            </div>
+            <div class="boxes">
+                <input class="pokebox-1 type="text" value="Enter First Pokemon Name">
+                <input class="pokebox-2 type="text" value="Enter Second Pokemon Name">
+            </div>
         </div>
+        
+        
+              
+
+
+
+        
+
+
+           
+
         <div class="matchup">
-        <div class="pokeballs">
-            <img class="pokeball-img1" src="./assets/pokeball_one.png" alt="">
-           <img class="pokeball-img2" src="./assets/pokeball_two.png" alt="">
+             <!-- This section is for the second "page" -->
+            <div class="heading-second">
+                <h1>(Pokemon dynamic name) Winner!</h1>
+                <div class="pokemon-name-display"></div>
+                    <div class="pokemon1">
+                        <h2>Dynamic Pokemon1 Name Displays Here</h2>
+                    </div>
+                    <div class="pokemon2">
+                        <h2>Dynamic Pokemon2 Name Displays Here</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- End of that section -->
+            <button class="reset"></button>
+            <div class="sprites">
+                <img class="pokemon1-sprite src="" alt="">
+                <img class="pokemon2-sprite src="" alt="">
+            </div>
+            <div class="height-info">
+                <h6 class="pokemon1-height">This is a placeholder for pokemon height</h6>
+                <h6 class="pokemon2-height">This is a placeholder for pokemon height</h6>
+            </div>
         </div>
-        <div class="inputboxes">
-            <input class="pokebox-1 type="text" value="Enter First Pokemon Name">
-            <input class="pokebox-2 type="text" value="Enter Second Pokemon Name">
-        </div>
-        </div>
+        
+        
+
+
+
     </section>
     <script defer src="./js/script.js"></script>
 </body>
