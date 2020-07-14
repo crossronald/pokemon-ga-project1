@@ -1,56 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
 img {
     max-width: 100px;
     max-height: 100px;
+}
+
+html {
+    height: 100%;
 }
 
 body {
     text-align: center;
     background-color: rgb(32, 32, 133);
     color: white;
+    min-height: 100%;
+   
 }
 
-#battle {
+.battle {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     max-width: 960px;
     margin: 0 auto;
 }
 
-
-
-
-
-#header {
+.header {
     grid-column-start: 3;
     grid-column-end: 9;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 
-
-#selector {
+.selector {
     grid-column-start: 3;
     grid-column-end: 9;
     grid-row-start: 4;
     grid-row-end: 4;
 }
 
-#pokeball-1 {
+.pokeball-1 {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 5;
     grid-row-end: 5;
 }
 
-#pokeball-2 {
+.pokeball-2 {
     grid-column-start: 8;
     grid-column-end: 10;
     grid-row-start: 5;
     grid-row-end: 5;
 }
 
-#button-press {
+.button-press {
     display: grid;
     grid-column-start: 5;
     grid-column-end: 7;
@@ -58,7 +63,7 @@ body {
     grid-row-end: 5;
 }
 
-#input-box1 {
+.input-box1 {
     display: grid;
     grid-column-start: 2;
     grid-column-end: 4;
@@ -66,8 +71,7 @@ body {
     grid-row-end: 6;
 }
 
-
-#input-box2 {
+.input-box2 {
     display: grid;
     grid-column-start: 8;
     grid-column-end: 10;
@@ -75,29 +79,28 @@ body {
     grid-row-end: 6;
 }
 
-
-
-#page2-name1 {
+.page2-name1 {
     grid-column-start: 3;
     grid-column-end: 5;
-    grid-row-start: ;
-    grid-row-end: ;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
-#page2-name2 {
+
+.page2-name2 {
     grid-column-start: 7;
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 1;
 }
 
-#display-winner {
+.display-winner {
     grid-column-start: 3;
     grid-column-end: 9;
     grid-row-start: 3;
     grid-row-end: 5;
 }
 
-#sprite1 {
+.sprite1 {
     display: grid;
     grid-column-start: 2;
     grid-column-end: 4;
@@ -105,7 +108,7 @@ body {
     grid-row-end: 5;
 }
 
-#sprite2 {
+.sprite2 {
     display: grid;
     grid-column-start: 8;
     grid-column-end: 10;
@@ -113,22 +116,21 @@ body {
     grid-row-end: 5;
 }
 
-
-#height-value1 {
+.height-value1 {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 6;
     grid-row-end: 6;
 }
 
-#height-value2 {
+.height-value2 {
     grid-column-start: 8;
     grid-column-end: 10;
     grid-row-start: 6;
     grid-row-end: 6;
 }
 
-#reset-button {
+.reset-button {
     display: grid;
     grid-column-start: 5;
     grid-column-end: 7;
