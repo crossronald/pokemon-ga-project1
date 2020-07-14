@@ -9,80 +9,58 @@
 </head>
 <body>
     <section class="battle">
-        
-        <!-- This section is for the text at the top and middle of the first page -->
-     
-        
+        <!-- This is the beginning!! -->
 
-
-        <!-- This section is for the first "page" -->
-        <div class="intro">
-            <!-- This section is for the text at the top and middle of the second page -->
-            <div class="heading-first">
-                <h1>Pokemon Battle: Rise!</h1>
-            </div>  
-                
-            <!-- End of that section -->
-            <div class="battle-text">
-                <h4>Choose Battle Mode:</h4>
-            </div>
-                
-                <select>
-                    <option value="Bigger">Bigger Pokemon Wins</option>
-                    <option value="Smaller">Smaller Pokemon Wins</option>
-                </select>
-           
-            
-            <div class="pokeballs">
-                <img class="pokeball-img1" src="./assets/pokeball_one.png" alt="pokeball">
-                <button class="go">GO!!</button>
-                <img class="pokeball-img2" src="./assets/pokeball_two.png" alt="pokeball">
-            </div>
-            <div class="boxes">
-                <input class="pokebox-1 type="text" value="Enter First Pokemon Name">
-                <input class="pokebox-2 type="text" value="Enter Second Pokemon Name">
-            </div>
+        <!-- This is the first "Page" -->
+        <div class="header">
+            <h1>Pokemon Battle: Rise!</h1>
         </div>
-        
-        
-              
 
-
-
-        
-
-
-           
-
-        <div class="matchup">
-             <!-- This section is for the second "page" -->
-            <div class="heading-second">
-                <h1>(Pokemon dynamic name) Winner!</h1>
-                <div class="pokemon-name-display"></div>
-                    <div class="pokemon1">
-                        <h2>Dynamic Pokemon1 Name Displays Here</h2>
-                    </div>
-                    <div class="pokemon2">
-                        <h2>Dynamic Pokemon2 Name Displays Here</h2>
-                    </div>
-                </div>
-            </div>
-            <!-- End of that section -->
-            <button class="reset"></button>
-            <div class="sprites">
-                <img class="pokemon1-sprite src="" alt="">
-                <img class="pokemon2-sprite src="" alt="">
-            </div>
-            <div class="height-info">
-                <h6 class="pokemon1-height">This is a placeholder for pokemon height</h6>
-                <h6 class="pokemon2-height">This is a placeholder for pokemon height</h6>
-            </div>
+        <!-- Separate DIV! -->
+        <div class="selector">
+            <h4>Choose Battle Mode:</h4>
+            <select>
+                <option value="Bigger">Bigger Pokemon Wins</option>
+                <option value="Smaller">Smaller Pokemon Wins</option>
+            </select>
         </div>
-        
-        
+    <!-- Separate DIV! -->
+        <div class="pokeballs">
+            <img class="pokeball-img1" src="./assets/pokeball_one.png" alt="pokeball">
+            <button class="go">GO!!</button>
+            <img class="pokeball-img2" src="./assets/pokeball_two.png" alt="pokeball">
+        </div>
+    <!-- Separate DIV! -->
+        <div class="input-boxes">
+            <input class="pokebox-1" type="text" placeholder="Enter First Pokemon Name">
+            <input class="pokebox-2" type="text" placeholder="Enter Second Pokemon Name">
+        </div>
+        <!-- This is the end of the first "Page" -->
 
-
-
+        <!-- This is the start of the second "Page" -->
+        <div class="page2-names">
+            <h2>Dynam Pok1 Nam Disp Here</h2>
+            <h2>Dynam Pok2 Nam Disp Here</h2>
+        </div>
+    <!-- Separate DIV! -->
+        <div class="display-winner">
+            <h1>(Pokemon dynamic name) Winner!</h1>
+        </div>
+    <!-- Separate DIV! -->
+        <div class="sprites">
+            <img class="bulbasaur-placeholder" src="assets/bulbasaur.png" alt="pokemon">
+            <img class="pikachu-placeholder" src="assets/pikachu.png" alt="pokemon">
+        </div>
+    <!-- Separate DIV! -->
+        <div class="height-values">
+            <h6 class="pokemon1-height">This is a placeholder for pokemon height</h6>
+            <h6 class="pokemon2-height">This is a placeholder for pokemon height</h6>
+        </div>
+    <!-- Separate DIV! -->
+        <div class="reset-button">
+            <button class="reset">Placeholder Reset</button>
+        </div>
+        <!-- This is the end! -->
     </section>
     <script defer src="./js/script.js"></script>
 </body>
