@@ -1,0 +1,139 @@
+img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(32, 32, 133);
+    color: white;
+}
+
+#battle {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+
+
+
+#header {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+#selector {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+#pokeball-1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+
+#pokeball-2 {
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+
+#button-press {
+    display: grid;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+
+#input-box1 {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 6;
+}
+
+
+#input-box2 {
+    display: grid;
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 6;
+}
+
+
+/* 
+#page2-name1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: ;
+    grid-row-end: ;
+    border-style: solid;
+    background-color: rgb(255, 0, 0);
+    padding: 30px
+}
+#page2-name2 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border-style: solid;
+    background-color: rgb(255, 123, 0);
+    padding: 30px
+}
+
+#display-winner {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    border-style: solid;
+    background-color: rgb(0, 225, 255);
+    padding: 30px
+}
+
+#sprites {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    border-style: solid;
+    background-color: rgb(11, 129, 21);
+    padding: 30px
+}
+
+
+
+#height-values {grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 8;
+    grid-row-end: 8;
+    border-style: solid;
+    background-color: rgb(61, 133, 13);
+    padding: 30px
+}
+
+
+#reset-button {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 9;
+    grid-row-end: 10;
+    border-style: solid;
+    background-color: rgb(202, 119, 108);
+    padding: 30px
+} */

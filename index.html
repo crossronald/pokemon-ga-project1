@@ -8,16 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="battle">
+    <div id="battle">
         <!-- This is the beginning!! -->
 
         <!-- This is the first "Page" -->
-        <div class="header">
+        <div id="header">
             <h1>Pokemon Battle: Rise!</h1>
         </div>
 
         <!-- Separate DIV! -->
-        <div class="selector">
+        <div id="selector">
             <h4>Choose Battle Mode:</h4>
             <select>
                 <option value="Bigger">Bigger Pokemon Wins</option>
@@ -25,43 +25,54 @@
             </select>
         </div>
     <!-- Separate DIV! -->
-        <div class="pokeballs">
-            <img class="pokeball-img1" src="./assets/pokeball_one.png" alt="pokeball">
-            <button class="go">GO!!</button>
-            <img class="pokeball-img2" src="./assets/pokeball_two.png" alt="pokeball">
+        <div id="pokeball-1">
+            <img id="pokeball-img1" src="./assets/pokeball_one.png" alt="pokeball">
+        </div>
+
+        <div id="button-press">
+            <button id="go">GO!!</button>
+        </div>
+
+        <div id="pokeball-2">
+            <img id="pokeball-img2" src="./assets/pokeball_two.png" alt="pokeball">
         </div>
     <!-- Separate DIV! -->
-        <div class="input-boxes">
-            <input class="pokebox-1" type="text" placeholder="Enter First Pokemon Name">
-            <input class="pokebox-2" type="text" placeholder="Enter Second Pokemon Name">
+        <div id="input-box1" style="display: inline-block;">
+            <input id="pokebox-1" type="text" placeholder="Enter First Pokemon Name">
+        </div>
+        <div id="input-box2" style="display: inline-block;">
+            <input id="pokebox-2" type="text" placeholder="Enter Second Pokemon Name">
         </div>
         <!-- This is the end of the first "Page" -->
 
         <!-- This is the start of the second "Page" -->
-        <div class="page2-names">
-            <h2>Dynam Pok1 Nam Disp Here</h2>
-            <h2>Dynam Pok2 Nam Disp Here</h2>
-        </div>
+        <!-- <div id="page2-name1"> -->
+            <!-- <h2>Dynam Pok1 Nam Disp Here</h2> -->
+        <!-- </div> -->
+        <!-- Separate DIV! -->
+        <!-- <div id="page2-name2"> -->
+            <!-- <h2>Dynam Pok2 Nam Disp Here</h2> -->
+        <!-- </div> -->
     <!-- Separate DIV! -->
-        <div class="display-winner">
-            <h1>(Pokemon dynamic name) Winner!</h1>
-        </div>
+        <!-- <div id="display-winner"> -->
+            <!-- <h1>(Pokemon dynamic name) Winner!</h1> -->
+        <!-- </div> -->
     <!-- Separate DIV! -->
-        <div class="sprites">
-            <img class="bulbasaur-placeholder" src="assets/bulbasaur.png" alt="pokemon">
-            <img class="pikachu-placeholder" src="assets/pikachu.png" alt="pokemon">
-        </div>
+        <!-- <div id="sprites"> -->
+            <!-- <img id="bulbasaur-placeholder" src="assets/bulbasaur.png" alt="pokemon"> -->
+            <!-- <img id="pikachu-placeholder" src="assets/pikachu.png" alt="pokemon"> -->
+        <!-- </div> -->
     <!-- Separate DIV! -->
-        <div class="height-values">
-            <h6 class="pokemon1-height">This is a placeholder for pokemon height</h6>
-            <h6 class="pokemon2-height">This is a placeholder for pokemon height</h6>
-        </div>
+        <!-- <div id="height-values"> -->
+            <!-- <h6 id="pokemon1-height">This is a placeholder for pokemon height</h6> -->
+            <!-- <h6 id="pokemon2-height">This is a placeholder for pokemon height</h6> -->
+        <!-- </div> -->
     <!-- Separate DIV! -->
-        <div class="reset-button">
-            <button class="reset">Placeholder Reset</button>
-        </div>
+        <!-- <div id="reset-button"> -->
+            <!-- <button id="reset">Placeholder Reset</button> -->
+        <!-- </div> -->
         <!-- This is the end! -->
-    </section>
+    </div>
     <script defer src="./js/script.js"></script>
 </body>
 </html>
