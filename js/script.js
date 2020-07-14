@@ -99,12 +99,21 @@ function handleResetButton(event){
     console.log(event);
 }
 
+//Make the data available as soon as the app loads
+getPokemon();
 //Get Pokemon Data Function
 function getPokemon() {
     $.ajax(baseURL)
-    .then(function(data) {
-        console.log(data)
+    .then(
+        function(data) {
+        pokemon = data.results;
     }, function(error) {
-        console.log(error)
+        console.log("Error: ", error);
     });
 }
+
+
+
+
+
+
