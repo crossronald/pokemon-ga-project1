@@ -26,10 +26,9 @@ let userInput2;
 let pokemon;
 let pokemonDetail;
 //cached element references (Dom Manimpulation)
-const $divSelector = $('.selector');
+const $realSelector = $('.realSelector');
+const $bigSelectee = $('div.selector > select');
 const $divButtonPress = $('.button-press');
-const $divInputBox1 = $('.input-box1');
-const $divInputBox2 = $('.input-box2');
 const $divPage2Name1 = $('.page2-name1');
 const $divPage2Name2 = $('.page2-name2');
 const $divDisplayWinner = $('.display-winner');
@@ -42,15 +41,21 @@ const $divResetButton = $('.reset-button');
 
 $divButtonPress.on('click', handleButtonPress);
 $divResetButton.on('click', handleResetButton);
+$bigSelectee.on('click', randomNoInput);
 //functions
 
+function randomNoInput (event) {
+        randomBattleInit(event);
+        return event;
+}
 function handleButtonPress(event){
     getPokemon(event);
     return event;
 }
 
 function handleResetButton(event){
-    console.log(event);
+    resetThemAll();
+    return event;
 }
 
 //Make the data available as soon as the app loads
@@ -62,8 +67,15 @@ const $userInput2 = $('.pokebox-2'); // input tag for second pokemon
 
 
 function getPokemon() {
+    var $option_selected = $('.realSelector option:selected').text();
+    if($option_selected === 'Generate Random Battle') {
+        
+        input1 = (1 + Math.floor(Math.random() * 807));
+        input2 = (1 + Math.floor(Math.random() * 807));
+    } else {
    input1 = $userInput1.val();
    input2 = $userInput2.val();
+}
    $.when(
        $.ajax({url: "https://pokeapi.co/api/v2/pokemon/" + input1}),
        $.ajax({url: "https://pokeapi.co/api/v2/pokemon/" + input2}),
@@ -71,8 +83,13 @@ function getPokemon() {
          function(first, second) {
             player1 = first[0];
             player2 = second[0];
+            $userInput1.val("");
+            $userInput2.val("");
+            render();
+            getSelectedOption();
        }, function(error) {
-          console.log("Something Went Wrong: ", error);
+            alert("One of those Pokemon names doesn't exist yet! Please try again.");
+            console.log("Something Went Wrong: ", error);
        });
 }
 /*Generate the sprites of that data as an html element for the classe sprite1*/
@@ -88,6 +105,7 @@ function generateHTML2() {
         return image;
         };
     
+       
 
     function render() {
         const htmlImage1 = generateHTML1();
@@ -101,38 +119,42 @@ function generateHTML2() {
         $divPage2Name1.html(`<h2>${playerOneString}</h2>`)
         $divPage2Name2.html(`<h2>${playerTwoString}</h2>`)
 
-        $divHeightValue1.html(`<h6>${player1.height}</h6> ft`)
-        $divHeightValue2.html(`<h6>${player2.height}</h6> ft`)
+        $divHeightValue1.html(`<h6>${Math.round(player1.height/10 * 3.28084 *10)/10}</h6> ft`)
+        $divHeightValue2.html(`<h6>${Math.round(player2.height/10 * 3.28084 *10)/10}</h6> ft`)
     }
-
+        
    
-//I need to add a function that will replace the text of classes page2-name1 and page2-name2 with dynamic data
-// function nameReturn1(returnName1) {
-//     if(/*the name the user entered for name 1 matches the name of a pokemon in the data*/) {
-    // /*replace the text in class page2-name1 with that name*/
-    // }
-    // if(/*the name the user entered for the name 1 matches the name of a pokemon in the data*/) {
-        /*replace the text in the class height-value1 with the height value of that pokemon*/
-//     }
-// }
+    function getSelectedOption() {
+        var $selected_option = $('.realSelector').val()
+        var winner;
+        if($selected_option === 'Bigger' && player1.height > player2.height || $selected_option === 'random' && player1.height > player2.height) {
+            winner = player1.name;
+         } else if ($selected_option === 'Bigger' && player2.height > player1.height || $selected_option === 'random' && player2.height > player1.height) {
+             winner =player2.name;
+         } else if ($selected_option !== 'Bigger' && player1.height < player2.height || $selected_option === 'random' && player1.height < player2.height) {
+            winner = player1.name;
+         } else if ($selected_option !== 'Bigger' && player2.height < player1.height || $selected_option === 'random' && player2.height < player1.height) {
+             winner = player2.name
+         } else {
+            winner = "It's a tie!"
+         }
+         
+         if(winner !== "It's a tie!") {
+             $divDisplayWinner.html(` <h1>${winner[0].toUpperCase()}${winner.split("").splice(1).join("")} is the Winner!</h1>`)
+     }
+    }          
+   function resetThemAll (){
+            location.reload(true);
+   }
 
-// function nameReturn2(returnName2) {
-    // if(/*the name the user entered for name 2 matches the name of a pokemon in the data*/) {
-        /*replace the text in class page2-name2 with that name*/
-    // }
-    // if(/*the name the user entered for the name 2 matches the name of a pokemon in the data*/) {
-        /*replace the text in the class height-value2 with the height value of that pokemon*/
-//     }
-// }
-// }
 
-//I need to add a function that will declare a winner based on the state of the option box. if "bigger pokemon wins" is selected then the pokemon with the bigger height wins and vice versa.
-// function declareWinner(winnerName) {
-//     if(/* taller pokemon === true*/) {
-        /*put the name of the tallest pokemon in the display-winner class*/
-    // } else if (/*shorter pokemon === true*/{
-        /*put the name of the shorter pokemon in the display-winner class*/
-    // } else {
-//         /*display the text "its a tie" in the display-winner class*/
-//     }
-// }
+function randomBattleInit () {
+setTimeout(function randomBattle(){ 
+    var $option_selected = $('.realSelector option:selected').text();
+    if($option_selected === 'Generate Random Battle'){
+        
+        $('.pokebox-1').prop('disabled', true);
+        $('.pokebox-2').prop('disabled', true);
+    } 
+}, 1500);
+}

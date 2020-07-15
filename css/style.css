@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    cursor: url(https://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto !important;
 }
 
 img {
@@ -136,4 +137,18 @@ body {
     grid-column-end: 7;
     grid-row-start: 5;
     grid-row-end: 5;
-} 
+    height: 30px;
+
+}
+
+div.fadeOut {
+opacity: 0;
+pointer-events: none;
+
+}
+
+div.fadeIn {
+opacity: 1;
+pointer-events: all;
+
+}
