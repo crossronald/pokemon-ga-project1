@@ -154,7 +154,7 @@ function generateHTML2() {
      }
     }          
    function resetThemAll (){
-            location.reload(true);
+            window.location.href = window.location.href;
    }
 
 
