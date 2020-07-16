@@ -95,6 +95,7 @@ function getPokemon() {
             render();
             getSelectedOption();
             eraseItAll();
+            playMusic();
        }, function(error) {
             alert("One of those Pokemon names doesn't exist yet! Please try again.");
             console.log("Something Went Wrong: ", error);
@@ -145,6 +146,7 @@ function generateHTML2() {
              winner = player2.name
          } else {
             winner = "It's a tie!"
+            $divDisplayWinner.html(` <h1>It's a tie!</h1>`)
          }
          
          if(winner !== "It's a tie!") {
@@ -171,4 +173,9 @@ setTimeout(function randomBattle(){
 function eraseItAll () {
     // $firstPage.toggleClass('fadeOut')
     $firstPage.css('display', 'none')
+}
+
+function playMusic () {
+var audio = $("#mysoundclip")[0];
+      audio.play();
 }
