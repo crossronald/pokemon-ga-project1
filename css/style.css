@@ -1,11 +1,30 @@
 * {
     box-sizing: border-box;
     cursor: url(https://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto !important;
+    
 }
 
-img {
-    max-width: 100px;
-    max-height: 100px;
+.battle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.theSprites {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.theHeights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pokeball-img1, .pokeball-img2 {
+    max-width: 200px;
+    max-height: 200px;
 }
 
 html {
@@ -17,16 +36,12 @@ body {
     background-color: rgb(32, 32, 133);
     color: white;
     min-height: 100%;
-   
+   display: grid;
+   /* grid-template-columns: repeat(10, 1fr) ;
+   grid-template-rows: repeat(10, 1fr); */
 }
 
-.battle {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    max-width: 960px;
-    margin: 0 auto;
-}
+
 
 .header {
     grid-column-start: 3;
@@ -57,7 +72,7 @@ body {
 }
 
 .button-press {
-    display: grid;
+    
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 5;
@@ -141,14 +156,7 @@ body {
 
 }
 
-div.fadeOut {
-opacity: 0;
-pointer-events: none;
-
-}
-
-div.fadeIn {
-opacity: 1;
-pointer-events: all;
-
+.fadeOut {
+    opacity: 0;
+    pointer-events: none;
 }

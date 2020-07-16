@@ -37,12 +37,17 @@ const $divSprite2 = $('.sprite2');
 const $divHeightValue1 = $('.height-value1');
 const $divHeightValue2 = $('.height-value2');
 const $divResetButton = $('.reset-button');
+const $firstPage = $('.first-page');
+const $secondPage = $('.second-page');
 //event listeners
 
 $divButtonPress.on('click', handleButtonPress);
+
 $divResetButton.on('click', handleResetButton);
 $bigSelectee.on('click', randomNoInput);
 //functions
+
+
 
 function randomNoInput (event) {
         randomBattleInit(event);
@@ -52,6 +57,8 @@ function handleButtonPress(event){
     getPokemon(event);
     return event;
 }
+
+
 
 function handleResetButton(event){
     resetThemAll();
@@ -68,8 +75,8 @@ const $userInput2 = $('.pokebox-2'); // input tag for second pokemon
 
 function getPokemon() {
     var $option_selected = $('.realSelector option:selected').text();
+
     if($option_selected === 'Generate Random Battle') {
-        
         input1 = (1 + Math.floor(Math.random() * 807));
         input2 = (1 + Math.floor(Math.random() * 807));
     } else {
@@ -87,6 +94,7 @@ function getPokemon() {
             $userInput2.val("");
             render();
             getSelectedOption();
+            eraseItAll();
        }, function(error) {
             alert("One of those Pokemon names doesn't exist yet! Please try again.");
             console.log("Something Went Wrong: ", error);
@@ -157,4 +165,10 @@ setTimeout(function randomBattle(){
         $('.pokebox-2').prop('disabled', true);
     } 
 }, 1500);
+}
+
+
+function eraseItAll () {
+    // $firstPage.toggleClass('fadeOut')
+    $firstPage.css('display', 'none')
 }
