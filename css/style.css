@@ -4,6 +4,16 @@
     
 }
 
+html { 
+    background: url(/assets/pokemon\ project\ background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+
 .battle {
     display: flex;
     align-items: center;
@@ -22,10 +32,42 @@
     justify-content: center;
 
 }
-.pokeball-img1, .pokeball-img2 {
-    max-width: 200px;
-    max-height: 200px;
+
+
+
+
+
+
+ .pokeball-img1 {
+    
+    width: 400px; 
+    height: 300px;    
+   
+    -webkit-animation: spin 10s infinite linear;
 }
+
+@-webkit-keyframes spin {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}   
+}
+
+
+
+.pokeball-img2 {
+    
+    width: 400px; 
+    height: 300px;    
+   
+    -webkit-animation: antiClockwiseSpin 10s infinite linear;
+}
+
+@keyframes antiClockwiseSpin {
+	0%  {transform: rotate(360deg);}
+	100% {transform: rotate(0deg);}	
+}
+
+
+
 
 html {
     height: 100%;
@@ -34,7 +76,6 @@ html {
 body {
     font-family: 'Press Start 2P', cursive;
     text-align: center;
-    background-color: rgb(32, 32, 133);
     color: white;
     min-height: 100%;
     display: grid;
