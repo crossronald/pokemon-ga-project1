@@ -98,7 +98,9 @@ function getPokemon() {
             playMusic();
        }, function(error) {
             alert("One of those Pokemon names doesn't exist yet! Please try again.");
-            console.log("Something Went Wrong: ", error);
+            $userInput1.val("");
+            $userInput2.val("");
+            // console.log("Something Went Wrong: ", error);
        });
 }
 /*Generate the sprites of that data as an html element for the classe sprite1*/
