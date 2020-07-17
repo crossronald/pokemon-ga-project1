@@ -49,4 +49,4 @@ I had the help of some instructional advisors! Proud to have it!
 
 
 ## Getting Started:
-Click [HERE](https://pages.git.generalassemb.ly/crossronald/pokemon-ga-project1/) to open in desktop.
+Click [HERE](https://crossronald.github.io/pokemon-ga-project1/) to open in desktop.
