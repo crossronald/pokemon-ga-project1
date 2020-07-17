@@ -4,13 +4,13 @@
 
 ### Download it [HERE](https://git.generalassemb.ly/crossronald/pokemon-ga-project1/archive/master.zip)
 
-![Pokemon Battle: Rise! Draft Landing Page](https://imgur.com/vQFpwmN)
+![Pokemon Battle: Rise! Draft Landing Page](./assets/Landing_Page_Mockup.png)
 
- ![Pokemon Battle: Rise! Draft Transition Page](https://imgur.com/zfTLzYC)
+![Pokemon Battle: Rise! Draft Transition Page](./assets/Transition_Page_Mockup.png)
 
-![Pokemon Battle: Rise! Working Landing Page](https://imgur.com/FGoxiYn)
+![Pokemon Battle: Rise! Working Landing Page](./assets/working_landing_page.png)
 
-![Pokemon Battle: Rise! Working Transition Page](https://imgur.com/VW6Ig1c)
+![Pokemon Battle: Rise! Working Transition Page](./assets/working_transition_page.png)
 
 ## How's the code?
 This is my first forray into creating an app somewhat on my own. Enjoy at your own risk haha.
