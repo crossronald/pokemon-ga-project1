@@ -44,7 +44,7 @@ I had the help of some instructional advisors! Proud to have it!
 
 * Add Animations for pokemon to "attack"
 
-*Add Pokemon sprite noises indicating an attack
+* Add Pokemon sprite noises indicating an attack
 
 
 ## Technologies:
