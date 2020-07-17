@@ -4,11 +4,19 @@
 
 ### Download it [HERE](https://git.generalassemb.ly/crossronald/pokemon-ga-project1/archive/master.zip)
 
+## I used Lucid Chart to create a wireframe for the landing page:
+
 ![Pokemon Battle: Rise! Draft Landing Page](./assets/Landing_Page_Mockup.png)
+
+## Here's the final working result:
+
+![Pokemon Battle: Rise! Working Landing Page](./assets/working_landing_page.png)
+
+## I used Lucid Chart to create a wireframe for the transition page:
 
 ![Pokemon Battle: Rise! Draft Transition Page](./assets/Transition_Page_Mockup.png)
 
-![Pokemon Battle: Rise! Working Landing Page](./assets/working_landing_page.png)
+## Here's the final working result:
 
 ![Pokemon Battle: Rise! Working Transition Page](./assets/working_transition_page.png)
 
