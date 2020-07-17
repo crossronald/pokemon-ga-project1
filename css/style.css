@@ -364,12 +364,15 @@ animation: animate 10s infinite linear;
 
 
 
-
+.reset-button {
+    opacity: 0;
+}
 
 
 
 
 .reset {font-family: 'Press Start 2P';
+    
 height: 75px;
 width: 150px;
 font-family: 'Press Start 2P';

@@ -168,6 +168,7 @@ function generateHTML2() {
     }          
    function resetThemAll (){
             window.location.href = window.location.href;
+            
    }
 
 
@@ -185,11 +186,9 @@ setTimeout(function randomBattle(){
 
 function eraseItAll () {
     $firstPage.css('display', 'none')
+   
 }
-hideResetButton();
-function hideResetButton() {
-    $divResetButton.css('opacity', '0');
-}
+
 
 function showResetButton () {
      $divResetButton.css('opacity', '1');
