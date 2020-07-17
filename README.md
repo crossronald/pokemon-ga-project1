@@ -37,7 +37,7 @@ I had the help of some instructional advisors! Proud to have it!
 
 
 
-## Future Enhancements:
+## Future Enhancements / Unsolved Problems:
 * Cleaner Sprite Animations for Taller/Smaller Battles
 
 * Add Transition Between Landing Page and Battle Page
