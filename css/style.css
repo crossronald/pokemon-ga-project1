@@ -5,6 +5,7 @@
 }
 
 html { 
+    height: 100%;
     background: url(/assets/pokemon\ project\ background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -13,33 +14,138 @@ html {
   }
 
 
-
-.battle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 30%;
-    margin-right: 30%;
-}
-.theSprites {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+body {
+    font-family: 'Press Start 2P';
+    text-align: center;
+    color: white;
+    min-height: 100%;
+    display: grid;
+   
 }
 
-.theHeights {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.first-page {
+display: flex;
+flex-direction: column;
+align-items: center;
 
 }
 
+.enter-left{
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-align: center;
+    color: transparent;
+    background-image: linear-gradient(to right, rgb(255, 1, 1), rgb(255, 174, 0), rgb(0, 255, 13), #0ff, rgb(253, 115, 246));
+    -webkit-background-clip: text;
+    background-size: 1000%;
+    animation: animate 10s infinite linear;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 4.00px;
+  }
+
+  .enter-right {
+    animation: 3s slide-up, animate 10s infinite linear;
+    margin-top:20px;
+    margin-bottom: 40px;
+    color: transparent;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 4.00px;
+    background-image: linear-gradient(to right, rgb(255, 1, 1), rgb(255, 174, 0), rgb(0, 255, 13), #0ff, rgb(253, 115, 246));
+    -webkit-background-clip: text;
+    background-size: 1000%;
+      overflow:hidden;
+  }
+  
+  @keyframes slide-up {
+    from {
+      margin-top: 100%;
+      height: 300%; 
+    }
+  
+    to {
+      margin-top: 10px;
+      height: 100%;
+    }
+  }
+  
+    @keyframes animate {
+      0% {
+        background-position: 0% 100%;
+      }
+      50% {
+        background-position: 100% 0%;
+      }
+      100% {
+        background-position: 0% 100%;
+      }
+    }
+
+    
+        
+    
+    .selector {
+        background: rgb(68, 124, 56);
+        border: 15px solid rgb(78, 78, 78);
+        border-radius: 25px;
+        width: 500px;
+        height: 140px;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+
+    h4 {
+        font-size: 20px;
+       color: black;
+       /* line-height: 7px; */
+       margin: 20px;
+       
+            color: transparent;
+            background-image: linear-gradient(to right, rgb(255, 1, 1), rgb(255, 174, 0), rgb(0, 255, 13), #0ff, rgb(253, 115, 246));
+            -webkit-background-clip: text;
+            background-size: 1000%;
+            animation: animate 10s infinite linear;
+    
+            -webkit-text-fill-color: black;
+            -webkit-text-stroke-width: 4.00px;
+    }
+    
 
 
 
 
- .pokeball-img1 {
+
+
+    .realSelector {
+        width: 300px;
+        height: 30px;
+        /* border: 1px solid #999; */
+        font-size: 18px;
+        color: #000000;
+        background-color: rgb(173, 173, 173);
+        border-radius: 5px;
+        box-shadow: 4px 4px rgb(0, 0, 0);
+        
+      }
+
+.battle, .battle2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.grandBaby1, .grandbaby2{
+    display: flex;
+    flex-direction: column;
+}
+
+.grandBaby3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.pokeball-img1 {
     
     width: 400px; 
     height: 300px;    
@@ -69,107 +175,22 @@ html {
 
 
 
-
-html {
-    height: 100%;
-}
-
-body {
-    font-family: 'Press Start 2P';
-    text-align: center;
-    color: white;
-    min-height: 100%;
-    display: grid;
-   /* grid-template-columns: repeat(10, 1fr) ;
-   grid-template-rows: repeat(10, 1fr); */
-}
-
-
-.reset-button {
-    display: grid;
-    grid-column-start: 5;
-    grid-column-end: 7;
-    grid-row-start: 5;
-    grid-row-end: 5;
-    height: 30px;
-
-}
-
-.fadeOut {
-    opacity: 0;
-    pointer-events: none;
-}
-
-h4 {
-    font-size: 20px;
-   color: black;
-   line-height: 7px;
-   margin: 20px;
-}
-
-.pokebox-1 {
+.pokebox-1, .pokebox-2 {
     background: rgb(255,255,255);
     background: gray;
-    margin-right: 370px;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 30px;
 }
 
-
-.pokebox-2 {
-    background: rgb(255,255,255);
-background: gray;
-margin-left: 80px;
-}
 ::-webkit-input-placeholder { 
     color:    rgb(20, 17, 17);
      opacity: 1 !important;
 }
 
 
-
-
-.enter-right {
-    color: transparent;
-    -webkit-text-fill-color: black;
-    -webkit-text-stroke-width: 4.00px;
-    background-image: linear-gradient(to right, rgb(255, 1, 1), rgb(255, 174, 0), rgb(0, 255, 13), #0ff, rgb(253, 115, 246));
-    -webkit-background-clip: text;
-    background-size: 1000%;
-
-
-      overflow:hidden;
-    }
-    .enter-right {
-      animation: 3s slide-up, animate 10s infinite linear;
-      margin-top:20px;
-      margin-bottom: 40px;
-    }
-    
-    @keyframes slide-up {
-      from {
-        margin-top: 100%;
-        height: 300%; 
-      }
-    
-      to {
-        margin-top: 10px;
-        height: 100%;
-      }
-    }
-    
-      @keyframes animate {
-        0% {
-          background-position: 0% 100%;
-        }
-        50% {
-          background-position: 100% 0%;
-        }
-        100% {
-          background-position: 0% 100%;
-        }
-      }
-
 .go {
-
+    font-family: 'Press Start 2P';
     height: 75px;
     width: 150px;
     font-family: 'Press Start 2P';
@@ -191,6 +212,121 @@ margin-left: 80px;
 
 
 
+.page2-name1 {
+    /* padding-right: 15%; */
+
+    /* This should move in from the left */
+  width:100%;
+  overflow:hidden;
+}
+.page2-name1{
+  animation: 10s slide-right;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+
+.page2-name2 {
+  
+    /* This should move in from the right */
+  width:100%;
+  overflow:hidden;
+}
+.page2-name2{
+  animation: slide-left 10s;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+
+.spriteWrapper1, .spriteWrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+
+.animated1 {
+
+/* This should move in from the left */
+  width:100%;
+  overflow:hidden;
+}
+.animated1 {
+  animation: 10s slide-right;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+
+
+
+.animated2 {
+/* This should move in from the right */
+
+  width:100%;
+  overflow:hidden;
+}
+.animated2{
+  animation: slide-left 10s;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 200%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+}
+
+
+.spriteWrapper1, .spriteWrapper2 {
+    transform: scale(2); 
+    padding: 100px 0 0 0;
+    position: relative;
+    z-index: -1;
+
+  }
 
 
 
@@ -200,14 +336,14 @@ margin-left: 80px;
 
 
 
-.selector {
-    background: rgb(68, 124, 56);
-    border: 15px solid rgb(78, 78, 78);
-    border-radius: 25px;
-    width: 500px;
-    height: 130px;
-    margin-left: 30%;
-    margin-right: 30%
+.display-winner, .height-value2, .height-value1, .page2-name1, .page2-name2 {
+color: transparent;
+background-image: linear-gradient(to right, rgb(255, 1, 1), rgb(255, 174, 0), rgb(0, 255, 13), #0ff, rgb(253, 115, 246));
+-webkit-background-clip: text;
+background-size: 1000%;
+animation: animate 10s infinite linear;
+-webkit-text-fill-color: black;
+-webkit-text-stroke-width: 4.00px;
 }
 
 
@@ -217,36 +353,33 @@ margin-left: 80px;
 
 
 
-
-   .realSelector {
-        width: 300px;
-        height: 30px;
-        /* border: 1px solid #999; */
-        font-size: 18px;
+.reset {
+    height: 75px;
+    width: 150px;
+    font-family: 'Press Start 2P';
+    color: rgb(255, 255, 255);
+    border: 3px solid #000000;
+    background-image: -webkit-linear-gradient(30deg, #ff0000 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #ff0101 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+    border-radius: 10%
+      }
+      .reset:hover {
+        background-position: 100%;
         color: #000000;
-        background-color: rgb(173, 173, 173);
-        border-radius: 5px;
-        box-shadow: 4px 4px rgb(0, 0, 0);
-        
       }
 
-     
 
 
-      .enter-left{
-        margin: 0;
-        padding: 0;
-        font-size: 50px;
-        text-align: center;
-        color: transparent;
-        background-image: linear-gradient(to right, rgb(255, 1, 1), rgb(255, 174, 0), rgb(0, 255, 13), #0ff, rgb(253, 115, 246));
-        -webkit-background-clip: text;
-        background-size: 1000%;
-        animation: animate 10s infinite linear;
 
-        -webkit-text-fill-color: black;
-        -webkit-text-stroke-width: 4.00px;
-      }
+    
 
-     
-      
+
+
+
+
+

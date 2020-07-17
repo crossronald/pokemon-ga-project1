@@ -12,8 +12,11 @@
    <!-- this plays the music!! -->
     <audio id="mysoundclip" preload="auto">
         <source src="./assets/pokemon_music.mp3"> </source>
+        
     </audio>
-
+    <audio id="ballSound" preload="auto">
+        <source src="assets/pokeball_sound.mp3"> </source>
+    </audio>
 
     
         <!-- This is the beginning!! -->
@@ -39,25 +42,25 @@
             </div>
     <!-- Separate DIV! -->
             <div class="battle">
-                <div class="pokeball-1">
-                    <img class="pokeball-img1" src="./assets/pokeball_one.png" alt="pokeball">
+                <div class="grandBaby1">
+                    <div class="pokeball-1">
+                        <img class="pokeball-img1" src="./assets/pokeball_one.png" alt="pokeball">
+                    </div>
+                    <input class="pokebox-1" type="text" placeholder="Enter 1st Pokemon">
                 </div>
                 <div class="button-press">
                     <button class="go">GO!!</button>
                 </div>
-                <div class="pokeball-2">
-                    <img class="pokeball-img2" src="./assets/pokeball_two.png" alt="pokeball">
+                <div class="grandBaby2">
+                    <div class="pokeball-2">
+                        <img class="pokeball-img2" src="./assets/pokeball_two.png" alt="pokeball">
+                    </div>
+                    <input class="pokebox-2" type="text" placeholder="Enter 2nd Pokemon">
                 </div>
-                
             </div>
             
     <!-- Separate DIV! -->
-            <div class="input-box1" style="display: inline-block;">
-                <input class="pokebox-1" type="text" placeholder="Enter First Pokemon">
-            </div>
-            <div class="input-box2" style="display: inline-block;">
-                <input class="pokebox-2" type="text" placeholder="Enter Second Pokemon">
-            </div>
+            
         </div>
     <!-- </div> -->
      <!-- This is the end div in my attempt to wrap the page one in DIV temporarily while I assign JS functions to elements so that I can see them in two separate spots. I can remove this once everything works -->
@@ -68,40 +71,49 @@
          <!-- This is my attempt to wrap the page two in DIV(SECONDPAGE) temporarily while I assign JS functions to elements so that I can see them in two separate spots. I can remove this once everything works -->
         <!-- <div class="SECONDPAGE"> -->
         <div class="second-page">
-            <div class="page2-name1">
-                <h2></h2>
-            </div>
-            <!-- Separate DIV! -->
-            <div class="page2-name2">
-                <h2></h2>
+            <div class="display-winner"></div>
+            <div class="grandBaby3">
+                <div class="page2-name1">
+                    <h2></h2>
+                </div>
+                <!-- Separate DIV! -->
+                <div class="page2-name2">
+                    <h2></h2>
+                </div>
             </div>
         <!-- Separate DIV! -->
-            <div class="display-winner">
-               
-            </div>
+           
         <!-- Separate DIV! -->
-            <div class="theSprites">
-                <div class="sprite1">
+        <div class="battle2">
+            <div class="spriteWrapper1">
+                <div class="sprite1"></div>
                 <!-- Sprite 1 will be generated here by jquery -->
-                </div>
-                <div class="sprite2">
-                    <!-- Sprite 1 will be generated here by jquery -->
-                </div>
-            </div>
-        <!-- Separate DIV! -->
-            <div class="theHeights">
                 <div class="height-value1">
                     <h6 class="pokemon1-height"></h6>
                 </div>
+            </div>
+
+            
+                <div class="reset-button">
+                    <button class="reset">New<br/><br/>Battle</button>
+                </div>
+
+            <div class="spriteWrapper2">
+                <div class="sprite2"></div>
+                    <!-- Sprite 1 will be generated here by jquery -->
+                
                 <div class="height-value2">
                     <h6 class="pokemon2-height"></h6>
                 </div>
             </div>
+       
         <!-- Separate DIV! -->
-            <div class="reset-button">
-                <button class="reset">Reset</button>
-            </div>
+            
         </div>
+    </div>
+        <!-- Separate DIV! -->
+            
+        
     
         <!-- This is the end div in my attempt to wrap the page two in DIV temporarily while I assign JS functions to elements so that I can see them in two separate spots. I can remove this once everything works -->
         <!-- This is the end! -->

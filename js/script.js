@@ -25,7 +25,10 @@ let userInput1;
 let userInput2;
 let pokemon;
 let pokemonDetail;
+
 //cached element references (Dom Manimpulation)
+const $spriteWrapper1 = $('.spriteWrapper1');
+const $spriteWrapper2 = $('.spriteWrapper2');
 const $realSelector = $('.realSelector');
 const $bigSelectee = $('div.selector > select');
 const $divButtonPress = $('.button-press');
@@ -79,6 +82,11 @@ function getPokemon() {
     if($option_selected === 'Generate Random Battle') {
         input1 = (1 + Math.floor(Math.random() * 807));
         input2 = (1 + Math.floor(Math.random() * 807));
+    } else if ($userInput1.val() === ""  || $userInput2.val() === "") {
+        alert("Nurse Joy says: \n \nPlease enter the names of 2 Pokemon!\n                     or \n Select Battle Mode: 'Generate Random Battle!'");
+        $userInput1.val("");
+        $userInput2.val("");
+        return;
     } else {
    input1 = $userInput1.val();
    input2 = $userInput2.val();
@@ -95,7 +103,9 @@ function getPokemon() {
             render();
             getSelectedOption();
             eraseItAll();
+            animateThings();
             playMusic();
+            showResetButton();
        }, function(error) {
             alert("One of those Pokemon names doesn't exist yet! Please try again.");
             $userInput1.val("");
@@ -152,7 +162,7 @@ function generateHTML2() {
          }
          
          if(winner !== "It's a tie!") {
-             $divDisplayWinner.html(` <h1>${winner[0].toUpperCase()}${winner.split("").splice(1).join("")} is the Winner!</h1>`)
+             $divDisplayWinner.html(` <h1>${winner[0].toUpperCase()}${winner.split("").splice(1).join("")} wins the battle!</h1>`)
      }
     }          
    function resetThemAll (){
@@ -173,11 +183,26 @@ setTimeout(function randomBattle(){
 
 
 function eraseItAll () {
-    // $firstPage.toggleClass('fadeOut')
     $firstPage.css('display', 'none')
 }
+hideResetButton();
+function hideResetButton() {
+    $divResetButton.css('opacity', '0');
+}
+
+function showResetButton () {
+     $divResetButton.css('opacity', '1');
+}
+
+
 
 function playMusic () {
 var audio = $("#mysoundclip")[0];
       audio.play();
+}
+
+function animateThings () {
+$spriteWrapper1.addClass('animated1');
+$spriteWrapper2.addClass('animated2');
+
 }
