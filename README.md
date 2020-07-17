@@ -52,6 +52,8 @@ I had the help of some instructional advisors! Proud to have it!
 * CSS
 * Vanilla JavaScript
 * JQuery
+* Lucid Chart
+* Poke API
  
 
 
