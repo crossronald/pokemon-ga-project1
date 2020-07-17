@@ -144,6 +144,7 @@ align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width:100%;
 }
 .pokeball-img1 {
     
@@ -210,74 +211,21 @@ align-items: center;
         color: #000000;
       }
 
-
-
-.page2-name1 {
-    /* padding-right: 15%; */
-
-    /* This should move in from the left */
-  width:100%;
-  overflow:hidden;
-}
-.page2-name1{
-  animation: 10s slide-right;
-}
-
-@keyframes slide-right {
-  from {
-    margin-left: -100%;
-    width: 300%; 
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-
-
-.page2-name2 {
-  
-    /* This should move in from the right */
-  width:100%;
-  overflow:hidden;
-}
-.page2-name2{
-  animation: slide-left 10s;
-}
-
-@keyframes slide-left {
-  from {
-    margin-left: 100%;
-    width: 300%; 
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-
-
 .spriteWrapper1, .spriteWrapper2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
+    transform: scale(2); 
+    padding: 50px 0 0 0;
+    position: relative;
+    z-index: -1; 
 }
 
 
 .animated1 {
-
-/* This should move in from the left */
-  width:100%;
-  overflow:hidden;
-}
-.animated1 {
-  animation: 10s slide-right;
+  animation: 4s slide-right;
 }
 
 @keyframes slide-right {
@@ -296,14 +244,10 @@ align-items: center;
 
 
 
-.animated2 {
-/* This should move in from the right */
 
-  width:100%;
-  overflow:hidden;
-}
-.animated2{
-  animation: slide-left 10s;
+
+.animated2 {
+  animation: slide-left 4s;
 }
 
 @keyframes slide-left {
@@ -316,19 +260,91 @@ align-items: center;
     margin-left: 0%;
     width: 100%;
   }
-
 }
 
 
-.spriteWrapper1, .spriteWrapper2 {
-    transform: scale(2); 
-    padding: 100px 0 0 0;
-    position: relative;
-    z-index: -1;
 
+.animated3 {
+  height:200px;
+  overflow:hidden;
+}
+.animated3 {
+  animation: 1s slide-up;
+  margin-top:0%;
+}
+
+@keyframes slide-up {
+  from {
+    margin-top: 100%;
+    height: 300%; 
   }
 
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
 
+
+.display-winner, .height-value2, .height-value1 {
+    opacity: 0;
+}
+
+ .animated4 {
+    opacity : 1; transition:opacity 1s;
+     transition-delay: 13s;
+    
+    }
+
+
+
+    .sprite2 {
+     
+        animation: shake 2s;
+        animation-delay: 16s;
+      
+       
+        animation-iteration-count: 1;
+      }
+
+    @keyframes shake {
+        0% { transform: translate(5px, 5px) rotate(0deg); }
+        10% { transform: translate(-5px, -6px) rotate(-5deg); }
+        20% { transform: translate(-7px, 4px) rotate(5deg); }
+        30% { transform: translate(7px, 6px) rotate(0deg); }
+        40% { transform: translate(5px, -5px) rotate(5deg); }
+        50% { transform: translate(-5px, 6px) rotate(-5deg); }
+        60% { transform: translate(-7px, 5px) rotate(0deg); }
+        70% { transform: translate(7px, 5px) rotate(-5deg); }
+        80% { transform: translate(-5px, -5px) rotate(5deg); }
+        90% { transform: translate(5px, 6px) rotate(0deg); }
+        100% { transform: translate(5px, -6px) rotate(-5deg); }
+      }
+
+
+
+.sprite1 {
+  
+    animation: shake 2s;
+    animation-delay: 12s;
+  
+   
+    animation-iteration-count: 1;
+  }
+
+@keyframes shake {
+    0% { transform: translate(5px, 5px) rotate(0deg); }
+    10% { transform: translate(-5px, -6px) rotate(-5deg); }
+    20% { transform: translate(-7px, 4px) rotate(5deg); }
+    30% { transform: translate(7px, 6px) rotate(0deg); }
+    40% { transform: translate(5px, -5px) rotate(5deg); }
+    50% { transform: translate(-5px, 6px) rotate(-5deg); }
+    60% { transform: translate(-7px, 5px) rotate(0deg); }
+    70% { transform: translate(7px, 5px) rotate(-5deg); }
+    80% { transform: translate(-5px, -5px) rotate(5deg); }
+    90% { transform: translate(5px, 6px) rotate(0deg); }
+    100% { transform: translate(5px, -6px) rotate(-5deg); }
+  }
 
 
 
@@ -353,10 +369,10 @@ animation: animate 10s infinite linear;
 
 
 
-.reset {
-    height: 75px;
-    width: 150px;
-    font-family: 'Press Start 2P';
+.reset {font-family: 'Press Start 2P';
+height: 75px;
+width: 150px;
+font-family: 'Press Start 2P';
     color: rgb(255, 255, 255);
     border: 3px solid #000000;
     background-image: -webkit-linear-gradient(30deg, #ff0000 50%, transparent 50%);
@@ -367,19 +383,14 @@ animation: animate 10s infinite linear;
     -webkit-transition: background 300ms ease-in-out;
     transition: background 300ms ease-in-out;
     border-radius: 10%
-      }
-      .reset:hover {
-        background-position: 100%;
-        color: #000000;
-      }
-
-
-
-
+  }
+  .reset:hover {
+    background-position: 100%;
+    color: #000000;
+  }
+   
+   
+   
     
-
-
-
-
-
-
+      
+ 

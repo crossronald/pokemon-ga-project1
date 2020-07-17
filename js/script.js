@@ -42,6 +42,7 @@ const $divHeightValue2 = $('.height-value2');
 const $divResetButton = $('.reset-button');
 const $firstPage = $('.first-page');
 const $secondPage = $('.second-page');
+const $grandBaby3 = $('.grandBaby3')
 //event listeners
 
 $divButtonPress.on('click', handleButtonPress);
@@ -204,5 +205,8 @@ var audio = $("#mysoundclip")[0];
 function animateThings () {
 $spriteWrapper1.addClass('animated1');
 $spriteWrapper2.addClass('animated2');
-
+$grandBaby3.addClass('animated3');
+$divDisplayWinner.addClass('animated4');
+$divHeightValue1.addClass('animated4');
+$divHeightValue2.addClass('animated4');
 }
